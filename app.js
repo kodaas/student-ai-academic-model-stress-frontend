@@ -182,7 +182,7 @@ document.getElementById('studentForm').addEventListener('submit', async (event) 
   downloadPdfButton.style.display = 'none';
 
   try {
-    const response = await fetch('/api/predict', {
+    const response = await fetch('https://sparkling-marigold-40f50f.netlify.app/.netlify/functions/api/predict', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ demographics, academicHistory, socialEmotionalFactors }),
