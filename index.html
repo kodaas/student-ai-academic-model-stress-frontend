@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Success Predictor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+  <h1>📘 Student Success Predictor</h1>
+
+  <form id="studentForm">
+    <label for="demographics">Enter Demographic Information (age, gender, etc.):</label><br>
+    <textarea id="demographics" name="demographics" rows="3" cols="50" placeholder="Example: Age=22, Gender=Male"></textarea><br><br>
+
+    <label for="academicHistory">Enter Academic History (grades, attendance, assignments, etc.):</label><br>
+    <textarea id="academicHistory" name="academicHistory" rows="5" cols="50" placeholder="Example: GPA=3.2, Attendance=85%, Late assignments=2"></textarea><br><br>
+
+    <label for="socialEmotionalFactors">Enter Social-Emotional Factors:</label><br>
+    <textarea id="socialEmotionalFactors" name="socialEmotionalFactors" rows="3" cols="50" placeholder="Example: Mental health concerns, Social isolation level"></textarea><br><br>
+
+    <button type="submit" id="submitButton">Predict Student Success</button>
+  </form>
+
+
+  <h2>📊 Prediction Results</h2>
+  <div id="output">
+    <p id="loadingMessage" style="display:none;">⏳ Loading...</p>
+    <h3 id="graduationLikelihood" style="font-size: 1.5em; color: green;"></h3>
+    <p id="prediction"></p>
+    <p id="actionableInsights"></p>
+    <canvas id="improvementChart" style="display:none;"></canvas>
+    <br><br>
+    <div id="accuracyChartContainer">
+      <p id="accuracyMessage" style="margin-top: 20px;"><strong>THIS IS THE PERCENTAGE ACCURACY OF THE AI MODEL</strong></p>
+      <canvas id="accuracyChart" style="margin: 20px auto; max-width: 300px;"></canvas>
+    </div>
+    <button id="downloadPdfButton" style="display:none;">Download Prediction as PDF</button>
+  </div>
+
+  <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@1.0.0"></script>
+<script src="https://cdn.jsdelivr.net```
+
+</body>
+</html>
